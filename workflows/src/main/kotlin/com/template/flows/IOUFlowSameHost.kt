@@ -109,7 +109,7 @@ object IOUFlowSameHost {
             val borrowerAccountKey = subFlow(RequestKeyForAccount(borrowerHost, borrowerUUID))
 
             // Create IOU state by passing the parameters to state
-            val iouState = AccountsIOUState(iouValue, lenderAccountKey, borrowerAccountKey, lenderUUID)
+            val iouState = AccountsIOUState(iouValue, lenderUUID, lenderAccountKey, borrowerAccountKey, "IOU_CREATED", lenderUUID)
             // Make transaction to create IOUState by passing the CREATE command in contract and owning keys of lender and borrowers
             val txCommand = Command(AccountsIOUContract.Commands.CREATE(), listOf(lenderAccount.state.data.host.owningKey))
             val txBuilder = TransactionBuilder(notary)
