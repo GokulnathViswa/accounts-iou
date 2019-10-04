@@ -1,4 +1,4 @@
-package com.template
+/*package com.template
 
 import net.corda.testing.node.MockServices
 import org.junit.Test
@@ -10,4 +10,4 @@ class ContractTests {
     fun `dummy test`() {
 
     }
-}
+}*/
