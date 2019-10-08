@@ -52,9 +52,8 @@ dependencies {
     compile "org.slf4j:jul-to-slf4j:$slf4j_version"
     compile 'com.googlecode.json-simple:json-simple:1.1'
 
-    testCompile "$accounts_release_group:accounts-flows:$accounts_release_version"
     testCompile "$accounts_release_group:accounts-contracts:$accounts_release_version"
-    testCompile "$accounts_release_group:accounts-flows:$accounts_release_version"
+    testCompile "$accounts_release_group:accounts-workflows:$accounts_release_version"
 }
 
 
